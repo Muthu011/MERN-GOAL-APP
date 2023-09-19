@@ -3,7 +3,7 @@ const errorHandler = (err, req, res, next) => {
 
   res.status(statusCode);
   res.json({
-    message: "please add text",
+    message: err.message,
     stack: process.env.NODE_ENV === "PRODUCTION" ? null : err.stack,
   });
 };
