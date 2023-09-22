@@ -5,7 +5,7 @@ function Dashboard() {
     <div>
       <section className="heading">
         <h1>
-          <FaUser></FaUser>Register
+          <FaUser></FaUser>Dashboard
         </h1>
       </section>
     </div>
