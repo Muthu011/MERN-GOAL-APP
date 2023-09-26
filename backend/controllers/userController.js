@@ -21,8 +21,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const getMe = asyncHandler(async (req, res) => {
-  const { _id, email, name } = await User.findById(req.user.id);
-  res.status(200).json({ _id: _id, email: email, name: name });
+  res.status(200).json(req.user);
 });
 
 const registerUser = asyncHandler(async (req, res) => {
